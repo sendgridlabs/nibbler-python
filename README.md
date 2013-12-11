@@ -2,8 +2,7 @@ nibbler-python
 ==============
 Better email parser for Python
 
-[![Build Status](https://magnum.travis-ci.com/sendgridlabs/nibbler-python?token=Cxh5J57XgaqDXKj1xyma&branch=master)](https://magnum.travis-ci.com/sendgridlabs/nibbler-python)
-
+[![Build Status](https://travis-ci.org/sendgridlabs/nibbler-python.png?branch=master)](https://travis-ci.org/sendgridlabs/nibbler-python)
 
 ![nibbler](doc/_static/nibbler.gif)
 
