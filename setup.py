@@ -44,6 +44,9 @@ setup(
     extras_require={
         'dev': dev_requirements
     },
+    author="Isaac Saldana",
+    maintainer="Kien Pham",
+    maintainer_email="kien@sendgrid.com",
     url="https://github.com/sendgridlabs/nibbler-python",
     keywords='email parser esp sendgrid',
     license="MIT",
