@@ -1,0 +1,4 @@
+frink
+=====
+
+Better email parser
