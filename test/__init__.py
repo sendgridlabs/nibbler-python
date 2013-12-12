@@ -20,7 +20,8 @@ class BaseTestCase(unittest.TestCase):
             '!#$%&\'*+-/=?^_`{}|~@example.org',
             '"()<>[]:,;@\\\\\\"!#$%&\'*+-/=?^_`{}| ~.a"@example.org',
             '" "@example.org',
-            'abc."defghi".xyz@example.com'
+            'abc."defghi".xyz@example.com',
+            'test...test@test.com'
         ]
 
         # invalid email addresses:

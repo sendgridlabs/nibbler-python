@@ -8,7 +8,6 @@ class State(object):
         self.previous_dot = False
         self.previous_slash = False
         self.in_domain = False
-        self.last_state = None
 
 ATEXT = "!#$%&'*+-/=?^_`.{|}~@\"" + string.ascii_letters + string.digits
 SPECIAL = ['(', ')', ',', ':', ';', '<', '>', '[', '\\', ']', ' ']
@@ -52,9 +51,7 @@ def parse_email(email_str):
 
             elif character == '.':
                 # We can't have two consecutive dots
-                if state.previous_dot:
-                    break
-                elif not state.in_quotes:
+                if not state.in_quotes:
                     state.previous_dot = True
 
             elif character == '@' and not state.in_quotes:
