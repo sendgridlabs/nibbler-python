@@ -18,13 +18,15 @@ Usage
 -----
 Please see the [test/test_parser.py](test/test_parser.py) for more test cases
 
-	from nibbler.parser import parse_email
+	>>> from nibbler.parser import parse_email
 
 	# valid email
-	parse_email('"much.more unusual"@example.com')
+	>>> parse_email('"much.more unusual"@example.com')
+	(True, '"much.more unusual"@example.com')
 
 	# invalid email
-	parse_email('Abc.example.com')
+	>>> parse_email('A@b@c@example.com')
+	(False, 'A@b')
 
 
 Testing
