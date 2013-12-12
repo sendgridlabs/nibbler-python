@@ -4,18 +4,19 @@ nibbler-python helps you parse for valid email addresses in Python projects
 
 Example Usage
 -------------
-    from nibbler.parser import parse_email
+    >>> from nibbler.parser import parse_email
 
     # valid email
-    parse_email('"much.more unusual"@example.com')
+    >>> parse_email('"much.more unusual"@example.com')
 
     # invalid email
-    parse_email('Abc.example.com')
+    >>> parse_email('Abc.example.com')
 
 Contribute
 ----------
 This library is hosted on Github and you can contribute there:
-https://github.com/sendgridlabs/nibbler-python
+
+`Github source <https://github.com/sendgridlabs/nibbler-python>`_.
 """
 
 from setuptools import setup, find_packages

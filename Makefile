@@ -1,4 +1,4 @@
-.PHONY: all clean cover doc test
+.PHONY: all clean cover doc test deploy
 
 help:
 	@echo "Available commands:"
@@ -6,6 +6,7 @@ help:
 	@echo "  cover				generate test coverage"
 	@echo "  doc				generate doc"
 	@echo "  test				run all tests"
+	@echo "  deploy				package and deploy code to PyPI"
 
 install: clean
 	pip install -e .[dev]
@@ -27,3 +28,6 @@ doc: clean
 	sphinx-build -b html doc/source doc/build/html
 	@echo
 	livereload -b doc/build/html -p 3001
+
+deploy:
+	python setup.py sdist bdist_wininst upload
